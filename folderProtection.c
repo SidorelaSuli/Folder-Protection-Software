@@ -2,8 +2,7 @@
 #include<string.h>
 #include<process.h>
 
-void main()
-{
+void main(){
     FILE *p;
     char ch,s[100];
     char r[100]="REN ";
@@ -11,8 +10,7 @@ void main()
     char v[50];
     int choice,i;
     p=fopen("a.bat","w+");
-    if(p==NULL)
-    {
+    if(p==NULL){
         printf("Error in opening the file a.c");
         exit(0);
     }
@@ -28,8 +26,7 @@ void main()
     printf("\n3.Exit\n");
     scanf("%d",&choice);
 
-    switch(choice)
-    {
+    switch(choice){
     case 1:
         strcat(r,s);
         printf("\nEnter new name of your folder/file: ");
